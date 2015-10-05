@@ -1,0 +1,16 @@
+body,html,li,ul{margin:0;padding:0;outline:0;overflow:hidden;border:none;font-family:"Microsoft YaHei",Verdana,Geneva,sans-serif}
+a,input{font-family:"Microsoft Yahei","微软雅黑";font-size:16px;color:#333;padding:0;margin:0;border:none;-webkit-tap-highlight-color:transparent}
+.login{position:absolute;width:100%;height:100%;background-image:url(rec/background.png);background-size:cover}
+.login .content{position:relative;margin:160px auto;width:400px;height:320px;left:50%;margin-left:-200px;border-radius:8px;border:1px solid rgba(255,255,255,.4);background-color:rgba(255,255,255,.2);box-shadow:5px 5px 5px rgba(0,0,0,.1)}
+.login .hole{width:60px;height:6px;border-radius:10px;margin:20px auto;background-color:rgba(0,0,0,.2);border:1px solid rgba(255,255,255,.6)}
+.login .handler{position:absolute;left:50%;margin-left:-25px;width:50px;height:184px;background-image:url(rec/lines.png)}
+.login p{color:#fff;font-size:24px;text-align:center}
+.login .pwd,.login .user{font-size:16px;width:256px;margin-left:auto;margin-right:auto;line-height:2.5em;border-bottom:1px solid rgba(0,0,0,.1);border-radius:3px;border:1px solid rgba(242,242,424,.3);background-color:rgba(0,0,0,.01);margin-bottom:10px;transition:.2s ease;}
+.login .pwd .icon_PWD,.login .user .icon_ID{float:left;display:inline;text-align:center;width:40px;height:40px;background-size:40px;}
+.login .pwd:hover,.login .user:hover{border-color:rgba(255,255,255,.8);}
+.login .user .icon_ID{background-image:url(rec/user.png)}
+.login .pwd .icon_PWD{background-image:url(rec/lock.png)}
+
+.login input{text-align:center;width:216px;background:0 0;height:40px;text-align:left;color: #fff;}
+.login input:focus{outline:0}
+.login .sign_in_btn{width:256px;height:40px;background-color:#91c46c;box-shadow:3px 3px 3px rgba(0,0,0,.05);border-top: 1px solid rgba(255,255,255,.4);left:50%;margin-left:-128px;position:absolute;border-radius:3px;color:#fff;font-size:14px;text-align:center;line-height:40px;cursor: pointer;}
