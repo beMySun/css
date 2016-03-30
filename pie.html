@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>pie</title>
+</head>
+<style>
+	.pie1{
+		opacity: 1;
+		width: 100px;
+		height: 100px;
+		border-radius: 50%;
+		background-color: yellowgreen;
+		background-image: linear-gradient(to right ,transparent 50% , #655 0);
+		animation: test 6s  step-end  infinite ;
+				   
+	}
+
+	.pie1::before{
+		opacity: 1;
+		content: '';
+		display: block;
+		height: 100%;
+		margin-left: 50%;
+		border-radius: 0 100% 100% 0 / 50% ;
+		background-color: inherit;
+		transform-origin:left;
+		animation: spin 1.5s linear infinite ,
+				   bg   3s step-end  infinite ;
+	}
+
+	@keyframes spin{
+		to{ transform:rotate(.5turn);}
+	}
+	@keyframes bg {
+		50% { background: #655; }
+	}
+	@keyframes test {
+		0% {
+			opacity: 1;
+		}
+		50% {
+			opacity: 0;
+		}
+		100% { 
+			opacity: 1;
+		}
+	}
+	.pie2{
+		opacity: 0;
+		width: 100px;
+		height: 100px;
+		border-radius: 50%;
+		background-color: #655;
+		background-image: linear-gradient(to right ,#655 50% , yellowgreen 0);
+		animation:tests 6s  step-end  infinite ;
+	}
+	.pie2::before{
+		content: '';
+		display: block;
+		height: 100%;
+		margin-left: 50%;
+		border-radius: 0 100% 100% 0 / 50% ;
+		background-color: inherit;
+		transform-origin:left;
+		animation: spin2 1.5s linear infinite ,
+				   bg2   3s step-end  infinite ;
+	}
+
+	@keyframes spin2{
+
+		to{ 
+			transform:rotate(.5turn);
+
+		}
+	}
+	@keyframes bg2 {
+		50% { background: yellowgreen; }
+	}
+	
+	@keyframes tests {
+		
+		0%{
+			opacity: 0;
+		}
+		50%{
+			opacity: 1;
+		}
+		100%{
+			opacity: 0;
+		}
+	}
+
+	.pie{
+		position: relative;
+		width: 100px;
+		height:100px;
+		margin:20px;
+	}
+	.pie1,.pie2{
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+
+</style>
+<body>	
+	<div class="pie">
+		<div class="pie1"></div>
+		<div class="pie2"></div>
+	</div>
+
+</body>
+</html>
